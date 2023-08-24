@@ -23,9 +23,8 @@ public class ControllerClass {
     }
     @GetMapping("/deleteTask")
     public void deleteTask(@RequestParam String taskId)
-    {
-        
-    service.deleteTask(Integer.valueOf(taskId));
+    {   
+        service.deleteTask(Integer.valueOf(taskId));
     }
     @GetMapping("/getTask")
     public Optional<ModelTask> getbyId(@RequestParam String taskId)

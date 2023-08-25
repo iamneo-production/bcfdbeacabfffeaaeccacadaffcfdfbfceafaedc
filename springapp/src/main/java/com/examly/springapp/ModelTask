@@ -1,5 +1,4 @@
-package com.examly.springap;
-
+package com.examly.springapp;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -10,6 +9,7 @@ public class ModelTask {
     String taskHolderName;
     String taskDate;
     String taskName;
+    String taskStatus;
     public int getTaskId() {
         return taskId;
     }
@@ -40,7 +40,6 @@ public class ModelTask {
     public void setTaskStatus(String taskStatus) {
         this.taskStatus = taskStatus;
     }
-    String taskStatus;
    
 
     
